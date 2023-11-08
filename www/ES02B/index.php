@@ -12,13 +12,13 @@
 		$user=$_POST["username"];
 		$password=$_POST["password"];
 	
-		if($user!="admin"||$password!="password")
+		if($user!="davide"||$password!="capra")
 		{
 			echo"<p style='color: red;'>Nome utente o password sbagliato</p>";
 		}
 		else
 		{
-			echo"<p style='color: green;'>Benvenuto .username.</p>";
+			echo"<p style='color: green;'>Benvenuto $user</p>";
 		}
 	}
 	else

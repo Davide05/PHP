@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>ITCS Erasmo da Rotterdam</title>
+</head>
+<body>
+    <h1>Richiesta credenziali per l'accesso all'area riservata</h1>
+    <h1>Home page - Davide Hu</h1><br><br>
+    <h2>username = davide;<br>
+    password = capra;</h2><br><br>
+    <form name="frmLogin" action="login.php" method="POST">
+        username:<input type="text" name="username"><br><br>
+        password:<input type="password" name="password"></br></br>
+        <input type="submit" value="INVIO"><br><br>
+        <input type="reset"  value="CANCELLA"></br></br>
+    </form>
+</body>
+</html>

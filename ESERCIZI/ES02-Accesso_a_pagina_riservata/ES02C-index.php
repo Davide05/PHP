@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabella Quadrati e Cubi</title>
+    <title>Tabella dei numeri Quadrati e Cubi</title>
 </head>
 <body>
 
@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         for ($i = 1; $i <= $numero; $i++) {
             $quadrato = $i * $i;
             $cubo = $i * $i * $i;
+            //tr=riga       td=colonna
             echo "<tr><td>$i</td><td>$quadrato</td><td>$cubo</td></tr>";
         }
         echo "</table>";
@@ -31,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     // Se il form non è stato inviato, mostra il form
     ?>
-    <h2>Inserisci un numero da 1 a 10</h2>
+    <h1>Inserisci un numero da 1 a 10</h1>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="numero">Seleziona un numero:</label>
         <select name="numero" id="numero">
